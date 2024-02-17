@@ -54,7 +54,7 @@ function calculateCalories(e) {
   }
 
   const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-  const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+  const remainingCalories = budgetCalories - (consumedCalories + exerciseCalories);
   const surplusOrDeficit = remainingCalories < 0 ? 'Surplus' : 'Deficit';
   output.innerHTML = `
   <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
@@ -98,4 +98,4 @@ function clearForm() {
 
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
-clearButton.addEventListner('click',clearForm);
+clearButton.addEventListener("click",clearForm);
