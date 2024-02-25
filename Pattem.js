@@ -27,7 +27,7 @@ function makeDancing(str) {
     return result;
 }
 
-
+return result;
 const inputString = prompt("Enter a sentence: ");
 // const inputString = "This is Dancing senTence";
 const dancingResult = makeDancing(inputString);
