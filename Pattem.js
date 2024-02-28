@@ -10,7 +10,7 @@
 
 function makeDancing(str) {   
     let result = '';
-    let upperCase = true; 
+    let upperCase = fals; 
     for (let i = 0; i < str.length; i++) {
         const char = str.charAt(i);   
         if (char !== ' ') {
@@ -27,7 +27,7 @@ function makeDancing(str) {
     return result;
 }
 
-return result;
+
 const inputString = prompt("Enter a sentence: ");
 // const inputString = "This is Dancing senTence";
 const dancingResult = makeDancing(inputString);
