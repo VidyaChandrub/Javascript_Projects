@@ -222,10 +222,7 @@ playersDropdownList.addEventListener("change", (e) => {
       );
       break;
 
-    default :setPlayerCards();
-
+default:setPlayerCards();
 
   }
 });
-
-
