@@ -24,6 +24,7 @@ let resultSome = arr.some((a)=>{
 console.log(resultSome);
 
 //every - returns true or false - returns true if all the element of array satisfied the condition
+
 let resultEvery = arr.every((a)=>{
     return a<0
 })
